@@ -12,10 +12,10 @@ public class PizzaMenuItem {
     }
 
     public String getName() {
-        return name
+        return name;
     }
 
-    public String setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -33,5 +33,10 @@ public class PizzaMenuItem {
 
     public void setPrice(int price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return name + " - " + description + " - " + price + " Kc";
     }
 }
